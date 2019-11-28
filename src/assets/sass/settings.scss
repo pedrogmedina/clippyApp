@@ -1,0 +1,39 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+
+
+// Colors
+$white: #fff;
+$white-bone: #F6F6F6;
+$marine: #001E50;
+$cian: #99D7EF;
+$greyBold: #6D6D6D;
+$greyNormal: #989898;
+$grey-light: #e0e0e0;
+$red-bold: #B80000;
+
+
+//Font & text configuration
+
+$h1: 42px;
+$h2: 38px;
+$h3: 28px;
+$h4: 22px;
+$h5: 18px;
+
+$p-normal: 13px;
+$p-small: 11px;
+
+$bold: bold;
+$medium: 600;
+$normal: 400;
+$light: 200;
+
+//Buttons Configuration
+.btn-red{
+    background-color: $red-bold;
+    color: $white;
+    font-size: $p-normal;
+    font-weight: $medium;
+    letter-spacing: 1px;
+}
