@@ -9,9 +9,15 @@ $marine: #001E50;
 $cian: #99D7EF;
 $greyBold: #6D6D6D;
 $greyNormal: #989898;
-$grey-light: #e0e0e0;
+$grey-light: #dddddd;
 $red-bold: #B80000;
 
+// Shadows
+@mixin box-shadow($top, $left, $blur, $color) {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+ }
 
 //Font & text configuration
 

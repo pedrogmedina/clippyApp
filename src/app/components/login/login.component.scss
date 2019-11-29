@@ -6,6 +6,7 @@
     padding: 20px;
     border-radius: 10px;
     margin: 4em auto;
+    box-shadow: 0 0 10px 0px rgba(160, 160, 160, 0.1);
     h3{
         text-align: center;
         font-size: $h5;
@@ -40,7 +41,38 @@
             color: $grey-light;
             font-weight: $medium;
             letter-spacing: 1px;
+        }
+    }
+}
 
+.section-notices{
+    background-image: url(../../../assets/images/bgLogin1.2.jpg);
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+    text-align: left;
+    z-index: 999;
+    opacity: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px 30px 40px;
+    .info-log{
+        max-width: 480px;
+        background: rgba(240, 240, 240, 0.8);
+        padding: 10px 25px;
+        h2{
+            font-size: $h2;
+            font-weight: $greyBold;
+            color: $marine;
+            margin: 6px 0;
+        }
+        p{
+            font-size: $p-normal;
+            color: $marine;
+            margin: 6px 0;
         }
     }
 }
