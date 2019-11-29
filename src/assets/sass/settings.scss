@@ -4,6 +4,7 @@
 
 // Colors
 $white: #fff;
+$black: #333;
 $white-bone: #F6F6F6;
 $marine: #001E50;
 $cian: #99D7EF;
@@ -27,6 +28,7 @@ $h3: 28px;
 $h4: 22px;
 $h5: 18px;
 
+$p-big: 16px;
 $p-normal: 13px;
 $p-small: 11px;
 
@@ -36,10 +38,38 @@ $normal: 400;
 $light: 200;
 
 //Buttons Configuration
-.btn-red{
-    background-color: $red-bold;
-    color: $white;
+.btn{
+    border: none;
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    opacity: 0.8;
+    &:hover{
+        opacity: 1;
+        transition: 0.3s;
+    }   
+}
+
+.btn.btn-xl{
+    width: 100%;
+    padding: 0;
+    height: 50px;
+    font-size: $p-big;
+    font-weight: $bold;
+}
+.btn.btn-l{
+    padding: 10px 20px;
     font-size: $p-normal;
     font-weight: $medium;
-    letter-spacing: 1px;
+}
+
+.btn.btn-red{
+    background-color: $red-bold;
+    color: $white;
+}
+
+.btn.btn-white{
+    background-color: $white;
+    color: $black;
 }

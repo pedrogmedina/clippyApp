@@ -44,4 +44,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+textarea ,input{
+	&:focus{
+		outline: none;
+	}
+}
 

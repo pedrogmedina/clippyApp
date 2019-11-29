@@ -15,28 +15,34 @@
     }
     .form-crt{
         margin: 20px auto;
-        max-width: 400px;
+        max-width: 400em;
         width: 300px;
         label{
             width: 100%;
             line-height: 30px;
             display: block;
             font-weight: $medium;
-            color: $greyNormal;
+            color: $greyBold;
             a.passForget{
                 color: $cian;
                 cursor: pointer;
                 font-size: $p-small;
             }
         }
-        input{
+        
+        input[type="text"], input[type="password"]{
             width: 100%;
             padding: 6px;
             border-radius: 6px;
             border-width: 1px;
             border-style: solid;
-            border-color: $grey-light
+            border-color: $grey-light;
+            &:hover{
+                border-color: $greyBold;
+                transition: 0.3s;
+            }
         }
+        
         input::placeholder{
             color: $grey-light;
             font-weight: $medium;
@@ -48,31 +54,33 @@
 .section-notices{
     background-image: url(../../../assets/images/bgLogin1.2.jpg);
     background-size: cover;
-    top: 0;
-    bottom: 0;
-    min-height: 100vh;
     text-align: left;
-    z-index: 999;
-    opacity: 1;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 30px 50px 30px 40px;
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right,#2c2c2c,#141010);
+        opacity: .6; 
+    }
     .info-log{
         max-width: 480px;
-        background: rgba(240, 240, 240, 0.8);
         padding: 10px 25px;
+        z-index: 1000;
         h2{
             font-size: $h2;
             font-weight: $greyBold;
-            color: $marine;
+            color: $white;
             margin: 6px 0;
         }
         p{
             font-size: $p-normal;
-            color: $marine;
-            margin: 6px 0;
+            color: $white;
+            margin: 20px 0;
+            line-height: 20px;
         }
     }
 }
