@@ -14,15 +14,15 @@
                     <form action="" class="login-form">
                         <h3 class="h5">Accede a tu cuenta:</h3>
                         <div class="form-crt">
-                            <label for="">Usuario</label>
-                            <input type="text" placeholder="email@email.com" autofocus>
+                            <label for=""><fa-icon [icon]="faUser"></fa-icon> Usuario</label>
+                            <input type="text" placeholder="email@email.com" autofocus required>
                         </div>
                         <div class="form-crt">
-                            <label for="">Contraseña</label>
-                            <input type="password" placeholder="XXXXXXXXX">
+                            <label for=""><fa-icon [icon]="faLock"></fa-icon> Contraseña</label>
+                            <input type="password" placeholder="XXXXXXXXX" required>
                         </div>
                         <div class="form-crt">
-                            <label for=""><a class="passForget" href="#">He olvidad mi contraseña</a></label>
+                            <label for=""><a class="passForget" href="#"><fa-icon [icon]="faQuestion"></fa-icon> He olvidad mi contraseña</a></label>
                             <input class="btn btn-xl btn-red" type="submit" value="Entrar">
                         </div>
                     </form>
@@ -41,7 +41,6 @@
                     <div class="col-lg-6">
                         <button class="btn btn-l btn-white">+ info</button>
                     </div>
-                    
                 </div>
             </div>
         </div>

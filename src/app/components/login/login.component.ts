@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { faLock, faUser, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-login',
@@ -6,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
-  constructor() { }
+  faLock = faLock;
+  faUser = faUser;
+  faQuestion = faQuestionCircle;
+  constructor(
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit() {
   }
